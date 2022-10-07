@@ -54,6 +54,7 @@ bottone.addEventListener("click", function () {
         //Numero con solo 2 cifre decimali
         scontoBiglietto= scontoBiglietto.toFixed(2);
         //stampa
+        document.getElementById("titolone").innerHTML= 'Il prezzo del tuo biglietto è:'
         document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;';
 
     } else if (eta > 65) {
@@ -62,16 +63,17 @@ bottone.addEventListener("click", function () {
         //Numero con solo 2 cifre decimali
         scontoBiglietto= scontoBiglietto.toFixed(2);
         //stampa
+        document.getElementById("titolone").innerHTML= 'Il prezzo del tuo biglietto è:'
         document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;';
     } else {
         scontoBiglietto = prezzoBiglietto;
-        console.log(scontoBiglietto);}
+        console.log(scontoBiglietto);
         //Numero con solo 2 cifre decimali
         scontoBiglietto= scontoBiglietto.toFixed(2);
         //stampa
         document.getElementById("titolone").innerHTML= 'Il prezzo del tuo biglietto è:'
         document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;';
-
+    }
 
     
 
