@@ -14,33 +14,47 @@
 </head>
 
 <body>
-    
-        <header>
-            <div class="container-fluid">
 
-                <form >
-                    <label for="">Inserisci i Km che vuoi percorrere</label><br>
-                <input type="text" id="km" value=""> <br>
-                <label for=""> Inserisci la tua età</label><br>
-                <input type="text" id="eta" value=""><br>
-                <input type="button" id="check" value="Calcola il prezzo del tuo biglietto"><br>
-             </form>
-            </div>
-        </header>
-        <main>
-            <div class="container-fluid">
-                <h1>Il prezzo del tuo biglietto è:</h1>
-                <p id="prezzo"></p>
+    <header class="">
+        <!-- Just an image -->
+        <nav class="navbar navbar-light bg-danger">
+            <a href="#">
+                <img src="./img/modello-di-logo-del-treno-e-della-lente-ricerca-progettazione-vettore-voli-ferrovia-108585369.png"
+                    width="80" height="80" alt="">
+            </a>
 
-            </div>
+        </nav>
+       
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid  m-auto text-center mt-5">
 
-            
-        </main>
-    
-    <footer>
+            <form class="m-auto mb-3">
+                <div class="form-group col-6 m-auto">
+                    <label for="">Inserisci i Kilometri che vuoi percorrere </label>
+                    <input type="text" class="form-control" id="km" placeholder="">
+
+                </div>
+                <div class="form-group col-6 m-auto mt-3">
+                    <label for="">inserisci la tua età</label>
+                    <input type="text" class="form-control bg-" id="eta" placeholder="">
+                    <button type="button" id="check" class="btn btn-success m-auto mt-3">Calcola il tuo prezzo</button>
+                </div>
+
+
+            </form>
+        <div class="container-fluid text-center m-auto mt-3">
+
+            <h1 id="titolone"></h1>
+            <p id="prezzo"></p>
+        </div>
+    </main>
+
+    <footer class="bg-dark position-absolute bottom-0 start-0 w-100">
         <div class="container-fluid">
 
-            Bal BAL BAL 
+            <p class="text-white">lorem*500</p>
         </div>
     </footer>
     <script src="./js/script.js"></script>

@@ -19,8 +19,12 @@
 // se eta <18 ha uno sconto del 20%
 // se eta>65 sconto del 40%
 //
+//MILESTONE 2:
+//Solo una volta che il milestone 1 sarà completo e funzionante
+//allora realizzeremo un form in pagina in cui l’utente potrà inserire i dati e visualizzare il calcolo finale con il prezzo.
+//Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo).
 // stampare a schermo il risultato con max 2 cifre decimali 
-//
+
 //creo la variabile del bottone e la funzione che fara il calcolo 
 let bottone = document.getElementById('check');
 bottone.addEventListener("click", function () {
@@ -61,15 +65,15 @@ bottone.addEventListener("click", function () {
         document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;';
     } else {
         scontoBiglietto = prezzoBiglietto;
-        console.log(scontoBiglietto);
+        console.log(scontoBiglietto);}
         //Numero con solo 2 cifre decimali
         scontoBiglietto= scontoBiglietto.toFixed(2);
         //stampa
-
+        document.getElementById("titolone").innerHTML= 'Il prezzo del tuo biglietto è:'
         document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;';
 
 
-    }
+    
 
 });
 
