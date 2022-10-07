@@ -47,18 +47,25 @@ bottone.addEventListener("click", function () {
     if (eta < 18) {
         scontoBiglietto = prezzoBiglietto * 0.80;
         console.log(scontoBiglietto);
+        //Numero con solo 2 cifre decimali
+        scontoBiglietto= scontoBiglietto.toFixed(2);
         //stampa
         document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;';
 
     } else if (eta > 65) {
         scontoBiglietto = prezzoBiglietto * 0.60;
         console.log(scontoBiglietto);
+        //Numero con solo 2 cifre decimali
+        scontoBiglietto= scontoBiglietto.toFixed(2);
         //stampa
         document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;';
     } else {
         scontoBiglietto = prezzoBiglietto;
         console.log(scontoBiglietto);
+        //Numero con solo 2 cifre decimali
+        scontoBiglietto= scontoBiglietto.toFixed(2);
         //stampa
+
         document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;';
 
 
